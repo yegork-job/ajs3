@@ -1,0 +1,7 @@
+<hr style="border-width: medium">
+<form class="form-inline" name="loginForm" ng-submit="loginForm.$valid && login(userName)" novalidate>
+  <div class="form-group" ng-class="{'has-success': loginForm.$valid, 'has-error': loginForm.$invalid}">
+    <input class="form-control" type="text" ng-model="userName" name="userName" placeholder="Enter username" required>
+    <button class="btn btn-primary" ng-class="{'active': loginForm.$valid, 'disabled': loginForm.$invalid}" type="submit">Login</button>
+  </div>
+</form>
